@@ -1,0 +1,40 @@
+name: Release
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      semver:
+        type: string
+        description: 'Semver (eg: v1.2.3)'
+        required: true
+
+jobs:
+  release:
+    if: github.triggering_actor == 'SkYNewZ' # Prevent release from forks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: rickstaa/action-create-tag@v1
+        with:
+          tag: ${{ inputs.semver }}
+          force_push_tag: true
+          tag_exists_error: false
+          message: ${{ inputs.semver }}
+
+      - name: Build changelog
+        uses: mikepenz/release-changelog-builder-action@v4
+        id: changelog
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ inputs.semver }}
+          tag_name: ${{ inputs.semver }}
+          body: ${{ steps.changelog.outputs.changelog }}
