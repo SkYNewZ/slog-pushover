@@ -2,7 +2,7 @@ github.com/gregdel/pushover v1.3.0 h1:CewbxqsThoN/1imgwkDKFkRkltaQMoyBV0K9IquQLt
 github.com/gregdel/pushover v1.3.0/go.mod h1:EcaO66Nn1StkpEm1iKtBTV3d2A16SoMsVER1PthX7to=
 github.com/samber/lo v1.38.1 h1:j2XEAqXKb09Am4ebOg31SpvzUTTs6EN3VfgeLUhPdXM=
 github.com/samber/lo v1.38.1/go.mod h1:+m/ZKRl6ClXCE2Lgf3MsQlWfh4bn1bz6CXEOxnEXnEA=
-github.com/samber/slog-common v0.15.0 h1:pPUhFBPsKwjdzmUyOj1F5Ow5bw3w6hkole5CqJDNZoY=
-github.com/samber/slog-common v0.15.0/go.mod h1:Qjrfhwk79XiCIhBj8+jTq1Cr0u9rlWbjawh3dWXzaHk=
+github.com/samber/slog-common v0.15.2 h1:jQQK2MzJ1kfEsUyxI/mpwkqB2xI0qCo9Ne1D1yziuP0=
+github.com/samber/slog-common v0.15.2/go.mod h1:Qjrfhwk79XiCIhBj8+jTq1Cr0u9rlWbjawh3dWXzaHk=
 golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17 h1:3MTrJm4PyNL9NBqvYDSj3DHl46qQakyfqfWo4jgfaEM=
 golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17/go.mod h1:lgLbSvA5ygNOMpwM/9anMpWVlVJ7Z+cHWq/eFuinpGE=
