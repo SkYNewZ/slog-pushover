@@ -4,7 +4,7 @@ go 1.21.4
 
 require (
 	github.com/gregdel/pushover v1.3.1
-	github.com/samber/slog-common v0.15.2
+	github.com/samber/slog-common v0.16.0
 )
 
 require (
